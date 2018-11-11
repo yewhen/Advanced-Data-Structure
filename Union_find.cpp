@@ -15,6 +15,11 @@ public:
         union_count = len;
         id = vector<int> (len);
         size = vector<int> (len);
+        
+        for (int i = 0; i < len; i++){
+            id[i] = i;
+            size[i] = 1;
+        }
     }
     
     bool find(int p, int q){
